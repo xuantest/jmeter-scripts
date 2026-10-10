@@ -40,7 +40,7 @@
           <stringProp name="username">dev_admin</stringProp>
         </JDBCDataSource>
         <hashTree/>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量">
           <collectionProp name="Arguments.arguments">
             <elementProp name="sql_result" elementType="Argument">
               <stringProp name="Argument.name">sql_result</stringProp>
@@ -51,7 +51,7 @@
           <stringProp name="TestPlan.comments">${__time(/1000,)}</stringProp>
         </Arguments>
         <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="计数器" enabled="true">
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="计数器">
           <stringProp name="CounterConfig.start">1</stringProp>
           <stringProp name="CounterConfig.end">9999999999</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
@@ -60,7 +60,7 @@
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>
         <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="Host" elementType="Header">
               <stringProp name="Header.name">Host</stringProp>
@@ -96,7 +96,7 @@
             </elementProp>
             <elementProp name="X-Tenant-Id" elementType="Header">
               <stringProp name="Header.name">X-Tenant-Id</stringProp>
-              <stringProp name="Header.value">1</stringProp>
+              <stringProp name="Header.value">749492</stringProp>
             </elementProp>
             <elementProp name="X-Timestamp" elementType="Header">
               <stringProp name="Header.name">X-Timestamp</stringProp>
@@ -105,10 +105,6 @@
             <elementProp name="X-Token" elementType="Header">
               <stringProp name="Header.name">X-Token</stringProp>
               <stringProp name="Header.value">${P_token}</stringProp>
-            </elementProp>
-            <elementProp name="appVersion" elementType="Header">
-              <stringProp name="Header.name">appVersion</stringProp>
-              <stringProp name="Header.value">1.9.4</stringProp>
             </elementProp>
             <elementProp name="authorization" elementType="Header">
               <stringProp name="Header.name">authorization</stringProp>
@@ -211,7 +207,7 @@
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01.注册/登录" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01.注册/登录">
           <stringProp name="TestPlan.comments">${sql_result}</stringProp>
           <stringProp name="HTTPSampler.domain">192.168.1.228</stringProp>
           <stringProp name="HTTPSampler.port">6060</stringProp>
@@ -226,7 +222,7 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;phoneNumber&quot;: &quot;15377163598&quot;,&#xd;
+  &quot;phoneNumber&quot;: &quot;15377160001&quot;,&#xd;
   &quot;smsCode&quot;: &quot;888888&quot;,&#xd;
   &quot;loginType&quot;: 1,&#xd;
   &quot;mobileInfo&quot;: &quot;&quot;,&#xd;
@@ -741,7 +737,7 @@ if (myToken != null) {
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
